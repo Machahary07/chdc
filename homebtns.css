@@ -58,7 +58,7 @@
 /* ---- Bottom Left: Resources ---- */
 .bottom-left {
   position: absolute;
-  bottom: 40px; /* lifted 20px higher */
+  bottom: 80px; /* lifted 20px higher */
   left: 20px;
   z-index: 10;
 }
@@ -84,7 +84,7 @@
 /* ---- Bottom Right: Blog ---- */
 .bottom-right {
   position: absolute;
-  bottom: 40px; /* lifted 20px higher */
+  bottom: 80px; /* lifted 20px higher */
   right: 20px;
   z-index: 10;
 }
