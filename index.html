@@ -47,49 +47,61 @@
         </button>
       </div>
 
-      <!-- Bottom Center: Navigation Tabs -->
+      <!-- Bottom Center: Desktop/Tablet Navigation -->
 <div class="nav-center">
   <div class="nav-active-bg"></div>
+  <button class="nav-btn active" data-index="0">Home</button>
+  <button class="nav-btn" data-index="1">About</button>
+  <button class="nav-btn" data-index="2">Careers</button>
+  <button class="nav-btn" data-index="3">Events</button>
+</div>
 
-  <button class="nav-btn active" data-index="0">
-    <i data-lucide="home"></i>
-    <span>Home</span>
-  </button>
+<!-- Mobile: Hamburger Menu -->
+<button class="hamburger-btn">
+  <i data-lucide="menu"></i>
+</button>
 
-  <button class="nav-btn" data-index="1">
-    <i data-lucide="info"></i>
-    <span>About</span>
-  </button>
-
-  <button class="nav-btn" data-index="2">
-    <i data-lucide="briefcase"></i>
-    <span>Careers</span>
-  </button>
-
-  <button class="nav-btn" data-index="3">
-    <i data-lucide="calendar"></i>
-    <span>Events</span>
-  </button>
+<!-- Full-Screen Mobile Menu -->
+<div class="mobile-menu">
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/careers.html">Careers</a>
+  <a href="/events.html">Events</a>
 </div>
 
     </section>
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        lucide.createIcons();
-      
-        const buttons = document.querySelectorAll(".nav-btn");
-        const activeBg = document.querySelector(".nav-active-bg");
-      
-        buttons.forEach((btn, index) => {
-          btn.addEventListener("click", () => {
-            document.querySelector(".nav-btn.active")?.classList.remove("active");
-            btn.classList.add("active");
-            activeBg.style.left = `calc(${index * 25}% + 4px)`;
-          });
-        });
+  document.addEventListener("DOMContentLoaded", () => {
+    lucide.createIcons();
+
+    // Desktop nav highlight
+    const buttons = document.querySelectorAll(".nav-btn");
+    const activeBg = document.querySelector(".nav-active-bg");
+
+    buttons.forEach((btn, index) => {
+      btn.addEventListener("click", () => {
+        document.querySelector(".nav-btn.active")?.classList.remove("active");
+        btn.classList.add("active");
+        activeBg.style.left = `calc(${index * 25}% + 4px)`;
       });
-    </script>
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.querySelector(".hamburger-btn");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    let open = false;
+
+    menuBtn.addEventListener("click", () => {
+      open = !open;
+      mobileMenu.classList.toggle("show", open);
+      menuBtn.innerHTML = open
+        ? '<i data-lucide="x"></i>'
+        : '<i data-lucide="menu"></i>';
+      lucide.createIcons(); // re-render the icon
+    });
+  });
+</script>
 
     <script type="module" src="/script.js"></script>
   </body>
