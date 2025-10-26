@@ -1,0 +1,16 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 0L93.3013 25V75L50 100L6.69873 75V25L50 0Z" fill="#DCE4FD"/>
+<path d="M85.6406 71.5635L85.1592 71.8555L50.5186 92.8555L50 93.1689L49.4814 92.8555L14.8408 71.8555L14.3594 71.5635V28.4365L14.8408 28.1445L49.4814 7.14453L50 6.83105L50.5186 7.14453L85.1592 28.1445L85.6406 28.4365V71.5635Z" fill="#DCE4FD" stroke="black" stroke-width="2"/>
+<path d="M49.5 22L72.4497 36V64L49.5 78L26.5503 64V36L49.5 22Z" fill="black"/>
+<path d="M64 16L76 22.1332V78.2713L64 84V16Z" fill="black"/>
+<path d="M28 47H75V53H28V47Z" fill="#DCE4FD"/>
+<path d="M28 37L37 31.5V68.5L28 63V37Z" fill="#DCE4FD"/>
+<path d="M75 23.5496L65 17V83L75 77.458V23.5496Z" fill="#DCE4FD"/>
+<circle cx="21" cy="54" r="1.5" fill="#DCE4FD" stroke="black"/>
+<circle cx="21" cy="54" r="1.5" fill="#DCE4FD" stroke="black"/>
+<circle cx="50" cy="17" r="1.5" fill="#DCE4FD" stroke="black"/>
+<circle cx="50" cy="83" r="1.5" fill="#DCE4FD" stroke="black"/>
+<circle cx="21" cy="46" r="1.5" fill="#DCE4FD" stroke="black"/>
+<path d="M20 32L44.5 16H49V18H45L22 33V45H20V32Z" fill="black"/>
+<path d="M20 68L44.5 84H49V82H45L22 67V55H20V68Z" fill="black"/>
+</svg>

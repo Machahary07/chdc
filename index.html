@@ -1,3 +1,4 @@
+<!--CodeBy@Jeu-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,11 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodeHive Developers' Community</title>
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/homebtns.css" />
+    <script
+      src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"
+      defer
+    ></script>
   </head>
+
   <body>
     <section id="gallery">
       <div class="vignette-overlay"></div>
+
+      <!-- Top Left: Logo & Text -->
+      <div class="top-left">
+        <img src="/public/chdclogo.svg" alt="CodeHive Logo" class="logo" />
+        <h1 class="title">
+          CodeHive Developers’ <br />
+          Community
+        </h1>
+      </div>
+
+      <!-- Top Right: Join Now -->
+      <div class="top-right">
+        <button class="btn join-now">Join Now</button>
+      </div>
+
+      <!-- Bottom Left: Resources -->
+      <div class="bottom-left">
+        <button class="btn resources">
+          <i data-lucide="package"></i>
+          <span class="text">Resources</span>
+        </button>
+      </div>
+
+      <!-- Bottom Right: Blog -->
+      <div class="bottom-right">
+        <button class="btn blog">
+          <i data-lucide="notebook-pen"></i>
+          <span class="text">Blog</span>
+        </button>
+      </div>
     </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+      });
+    </script>
 
     <script type="module" src="/script.js"></script>
   </body>

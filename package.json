@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "gsap": "^3.13.0",
+    "lucide-react": "^0.548.0",
     "three": "^0.177.0"
   },
   "devDependencies": {
