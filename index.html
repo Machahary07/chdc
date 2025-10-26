@@ -46,11 +46,48 @@
           <span class="text">Blog</span>
         </button>
       </div>
+
+      <!-- Bottom Center: Navigation Tabs -->
+<div class="nav-center">
+  <div class="nav-active-bg"></div>
+
+  <button class="nav-btn active" data-index="0">
+    <i data-lucide="home"></i>
+    <span>Home</span>
+  </button>
+
+  <button class="nav-btn" data-index="1">
+    <i data-lucide="info"></i>
+    <span>About</span>
+  </button>
+
+  <button class="nav-btn" data-index="2">
+    <i data-lucide="briefcase"></i>
+    <span>Careers</span>
+  </button>
+
+  <button class="nav-btn" data-index="3">
+    <i data-lucide="calendar"></i>
+    <span>Events</span>
+  </button>
+</div>
+
     </section>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         lucide.createIcons();
+      
+        const buttons = document.querySelectorAll(".nav-btn");
+        const activeBg = document.querySelector(".nav-active-bg");
+      
+        buttons.forEach((btn, index) => {
+          btn.addEventListener("click", () => {
+            document.querySelector(".nav-btn.active")?.classList.remove("active");
+            btn.classList.add("active");
+            activeBg.style.left = `calc(${index * 25}% + 4px)`;
+          });
+        });
       });
     </script>
 
