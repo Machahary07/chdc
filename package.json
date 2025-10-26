@@ -1,7 +1,7 @@
 {
-  "name": "cg-phantom-gallery-javascript",
+  "name": "codehive-developers-community-javascript",
   "version": "1.0.0",
-  "description": "Phantom Gallery using Three.js and GSAP animations",
+  "description": "CodeHive Developers' Community",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
